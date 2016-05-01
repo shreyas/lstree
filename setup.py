@@ -22,7 +22,7 @@ test_requirements = [
 
 setup(
     name='lstree',
-    version='0.1.1',
+    version='0.1.2',
     description="lstree is for ls what pstree is for ps, and some more",
     long_description=readme + '\n\n' + history,
     author="Shreyas Kulkarni",
