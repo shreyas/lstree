@@ -33,7 +33,7 @@ __email__ = 'shyran@gmail.com'
 
 class NodeTreeBuilder(object):
     def __init__(self, root_dir, config):
-        # assert isinstance(config, TreeConfig)
+        assert isinstance(config, TreeConfig)
 
         self._root_dir = root_dir
         self._config = config

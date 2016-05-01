@@ -25,7 +25,7 @@ import os
 import sys
 from lstree.nodetree.builder import NodeTreeBuilder
 from lstree.nodetree.plotter import NodeTreePlotter
-from treeconfig import TreeConfig
+from lstree.treeconfig import TreeConfig
 
 __author__ = 'Shreyas Kulkarni'
 __email__ = 'shyran@gmail.com'

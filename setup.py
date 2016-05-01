@@ -30,6 +30,8 @@ setup(
     url='https://github.com/shreyas/lstree',
     packages=[
         'lstree',
+        'lstree.nodes',
+        'lstree.nodetree'
     ],
     package_dir={'lstree': 'lstree'},
     include_package_data=True,
