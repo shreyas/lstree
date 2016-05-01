@@ -160,7 +160,7 @@ class TestNodeTreeBuilder(TestCase):
         self.assertTrue('ignore.me.compiled' in nodes)
         self.assertTrue('testfile' in nodes)
 
-        # also ensure that hidden files are listed as well
+        # also ensure that the emptydir is out this time
         self.assertTrue('emptydir' not in nodes)
         self.assertTrue('.hiddendir' not in nodes)
         self.assertTrue('.hiddenfile' not in nodes)
@@ -186,7 +186,7 @@ class TestNodeTreeBuilder(TestCase):
         self.assertTrue('emptydir' in nodes)
         self.assertTrue('testfile' in nodes)
 
-        # also ensure that hidden files are listed as well
+        # also ensure that all files/folders matching the pattern are out
         self.assertTrue('somedir' not in nodes)
         self.assertTrue('somefile1' not in nodes)
         self.assertTrue('somefile2' not in nodes)
@@ -222,7 +222,7 @@ class TestNodeTreeBuilder(TestCase):
         self.assertTrue('somefile.compiled' in nodes)
         self.assertTrue('ignore.me.compiled' in nodes)
 
-        # also ensure that hidden files are listed as well
+        # also ensure that anything that doesn't match the pattern, is thrown out
         self.assertTrue('testfile' not in nodes)
         self.assertTrue('somefile1' not in nodes)
         self.assertTrue('somefile2' not in nodes)
